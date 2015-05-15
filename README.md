@@ -45,6 +45,16 @@ If all the modules built successfully, issue the following to install the RMA:
 
     make install
 
+### 64-bit Linux
+
+The Makefile will not respect the authority of CentOS 6.X 64-bit usr/lib.
+My quick and dirty work around was run this in the chan_respoke directory after
+make install
+
+    find . -type f -name "*.so" -exec install -m 755 {} /usr/lib64/asterisk/modules \;
+
+Then restart Asterisk and the modules should appear.
+
 ## Configuration
 
 A 'respoke.conf' configuration file also needs to be constructed and saved to
