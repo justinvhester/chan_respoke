@@ -2,7 +2,9 @@
 
 The Respoke Modules for Asterisk (RMA) is a collection of libraries that provide
 the necessary tools in order to allow communication between Asterisk and the
-Respoke service.
+Respoke service. Check out the
+[getting started guide](https://docs.respoke.io/client/asterisk/getting-started.html)
+for more information.
 
 ## Licensing
 
